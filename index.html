@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Learn Japanese with Fun!</h1>
+    <h1 style="font-family: 'Noto Sans JP', sans-serif; color: #ff6347; text-align: center; margin-top: 20px;">Learn Japanese with Fun! 🇯🇵</h1>
 
     <!-- レベル選択画面 -->
     <div id="level-selection">
@@ -40,6 +40,8 @@
       <div id="feedback"></div>
       <div id="explanation" class="hidden"></div>
       <button id="next-button" class="hidden" onclick="nextQuestion()">Next Question</button>
+      <button onclick="confirmReturnToTop()" style="background-color: red; color: white; float: right; font-size: small;">Return to Top</button>
+
     </div>
 
     <!-- 結果画面 -->
@@ -53,10 +55,18 @@
       <button onclick="selectDifficulty('anime')">Have some brake? Then Anime!</button>
 <button onclick="selectDifficulty('advanced')">This is tough Advanced!!</button>
 <button onclick="selectDifficulty('ITWords')">IT Words! Use these words a lot</button>
+<button onclick="confirmReturnToTop()" style="background-color: red; color: white; float: right; font-size: small;">Return to Top</button>
 
-    </div>
+  </div>
   </div>
 
   <script src="script.js"></script>
+  <script>
+  function confirmReturnToTop() {
+    if (confirm("Are you sure you want to return to the top screen? \n Are you really sure? All progress will be lost.")) {
+      location.reload();
+    }
+  }
+  </script>
 </body>
 </html>
