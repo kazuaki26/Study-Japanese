@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🎌 Fun Japanese Quiz Game 🎌</h1>
+  </header>
+  <main>
+    <section id="game-section">
+      <h2 id="question">Ready to learn Japanese?</h2>
+      <div id="options"></div>
+      <p id="feedback"></p>
+      <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+    </section>
+    <section id="score-section" class="hidden">
+      <h2>Game Over!</h2>
+      <p id="final-score"></p>
+      <button onclick="startGame()">Play Again</button>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Fun Japanese Quiz Game. Kazuaki.K</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
