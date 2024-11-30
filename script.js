@@ -86,7 +86,7 @@ const allQuestions = {
     { question: "What does '政治 (seiji)' mean?", options: ["Politics", "Economy", "Society"], answer: "Politics", explanation: "政治 (seiji) means 'politics' in Japanese." },
     { question: "What does '社会 (shakai)' mean?", options: ["Society", "Community", "Culture"], answer: "Society", explanation: "社会 (shakai) means 'society' in Japanese." },
     { question: "What does '文学 (bungaku)' mean?", options: ["Literature", "History", "Art"], answer: "Literature", explanation: "文学 (bungaku) means 'literature' in Japanese." }
-  ],
+  ],// anime advanced ITWords
   ITWords: [
     { question: "What does 'プログラミング (puroguramingu)' mean?", options: ["Programming", "Debugging", "Compiling"], answer: "Programming", explanation: "プログラミング (puroguramingu) means 'programming' in Japanese." },
     { question: "What does 'デバッグ (debaggu)' mean?", options: ["Debugging", "Programming", "Testing"], answer: "Debugging", explanation: "デバッグ (debaggu) means 'debugging' in Japanese." },
