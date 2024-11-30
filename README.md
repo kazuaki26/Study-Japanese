@@ -20,32 +20,32 @@ This is a web-based interactive quiz game designed to help beginners learn Japan
 
 # Getting Started
 
-## Prerequisites
+### Prerequisites
 
 	•	A web browser (e.g., Chrome, Firefox, Edge, Safari).
 
-## Installation
+### Installation
 
 	1.	Clone the repository:
 
-## git clone https://github.com/yourusername/fun-japanese-quiz-game.git
+### git clone https://github.com/yourusername/fun-japanese-quiz-game.git
 
 
 	2.	Navigate to the project directory:
 
-## cd fun-japanese-quiz-game
+### cd fun-japanese-quiz-game
 
 
 	3.	Open the index.html file in your browser:
 
-## open index.html
+### open index.html
 
 ## How to Play
 
 	1.	Start the game by clicking the Start Game button.
 	2.	Read the question and click on one of the options.
 	•	Correct Answer: You gain a point, and the app shows a brief animation 
-## before moving to the next question.
+### before moving to the next question.
 	•	Wrong Answer: You lose a life. The app displays the correct answer.
 	3.	The game ends when:
 	•	You run out of lives.
@@ -62,26 +62,26 @@ fun-japanese-quiz-game/
 
 ## Contributing
 
-## Contributions are welcome! To contribute:
+### Contributions are welcome! To contribute:
 	1.	Fork the repository.
 	2.	Create a new branch:
 
-## git checkout -b feature/your-feature-name
+### git checkout -b feature/your-feature-name
 
 
 	3.	Commit your changes:
 
-## git commit -m "Add your message here"
+### git commit -m "Add your message here"
 
 
 	4.	Push to your branch:
 
-## git push origin feature/your-feature-name
+### git push origin feature/your-feature-name
 
 
 	5.	Create a pull request.
 
-# **License**
+# **⚠️License⚠️**
 
 ## **This project is licensed under the MIT License.**
 
