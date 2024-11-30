@@ -3,30 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Japanese Quiz Game</title>
+  <title>Learn Japanese Game</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>🎌 Fun Japanese Quiz Game 🎌</h1>
-  </header>
-  <main>
-    <section id="game-section">
-      <h2 id="question">Ready to learn Japanese?</h2>
+  <div class="container">
+    <h1>Learn Japanese with Fun!</h1>
+
+    <!-- レベル選択画面 -->
+    <div id="level-selection">
+      <h2>Select Difficulty Level</h2>
+      <button onclick="selectDifficulty('easy')">Easy</button>
+      <button onclick="selectDifficulty('medium')">Medium</button>
+      <button onclick="selectDifficulty('hard')">Hard</button>
+    </div>
+
+    <!-- 問題数選択画面 -->
+    <div id="question-selection" class="hidden">
+      <h2>Select Number of Questions</h2>
+      <button onclick="startGame(5)">5 Questions</button>
+      <button onclick="startGame(10)">10 Questions</button>
+      <button onclick="startGame(15)">15 Questions</button>
+    </div>
+
+    <!-- ゲーム画面 -->
+    <div id="game-section" class="hidden">
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+      <div id="question"></div>
       <div id="options"></div>
-      <p id="feedback"></p>
-      <button id="next-btn" onclick="nextQuestion()">Next Question</button>
-    </section>
-    <section id="score-section" class="hidden">
-      <h2>Game Over!</h2>
+      <div id="feedback"></div>
+      <div id="explanation" class="hidden"></div>
+      <button id="next-button" class="hidden" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <!-- 結果画面 -->
+    <div id="score-section" class="hidden">
+      <h2>Congrats! You did it! 🎉</h2>
       <p id="final-score"></p>
-      <button onclick="startGame()">Play Again</button>
-    </section>
-  </main>
-  <footer>
-    <p>©  2024 Kazuaki.K
-    </p>
-  </footer>
+      <p>Next challenge awaits you! Do you want to try the next level?</p>
+      <button onclick="startGame(10)">Try Medium Level</button>
+      <button onclick="startGame(15)">Go for Hard Level!</button>
+      <button onclick="startGame(5)">Replay Easy Level</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
