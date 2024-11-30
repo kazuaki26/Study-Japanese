@@ -161,9 +161,9 @@ function nextQuestion() {
   }
 
   // 質問リストをシャッフル
-  let shuffledQuestions = shuffle(allQuestions[currentLevel]);
+  allQuestions[currentLevel] = shuffle(allQuestions[currentLevel]);
 
-  const currentQuestion = shuffledQuestions[currentQuestionIndex];
+  const currentQuestion = allQuestions[currentLevel][currentQuestionIndex];
   document.getElementById("question").textContent = currentQuestion.question;
 
   const optionsDiv = document.getElementById("options");
