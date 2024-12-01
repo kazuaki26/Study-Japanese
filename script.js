@@ -151,6 +151,7 @@ function shuffle(array) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
+  return array;
 }
 
 function nextQuestion() {
@@ -160,7 +161,7 @@ function nextQuestion() {
   }
 
   // 質問リストをシャッフル
-  shuffle(allQuestions[currentLevel]);
+  allQuestions[currentLevel] = shuffle(allQuestions[currentLevel]);
 
   const currentQuestion = allQuestions[currentLevel][currentQuestionIndex];
   document.getElementById("question").textContent = currentQuestion.question;
